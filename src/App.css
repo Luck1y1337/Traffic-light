@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 12px;
+  border-radius: 15px;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: #615d5c;
+}
+
+.container .red,
+.container .yellow,
+.container .green {
+  transition: background 0.5s linear;
+}
+
+.container .box .timer {
+  font-size: 60px;
+  color: white;
+}
+
+.container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.buttons {
+  text-align: center;
+  border-radius: 30px;
+}
+
+.start-btn {
+  margin-top: 15px;
+  padding: 12px 50px;
+  background-color: #0505a9;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #0303cc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.start-btn:hover {
+  background-color: #0303cc;
+}
+
+.emergency-btn {
+  margin-top: 15px;
+  padding: 12px 40px;
+  background-color: #ff4444;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #cc0000;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.emergency-btn:hover {
+  background-color: #cc0000;
+}
+
+.emergency-btn.active {
+  background-color: #00aa44;
+  border-color: #00cc55;
+}
